@@ -19,7 +19,7 @@ ENV SUBKEY_TYPE   RSA
 ENV SUBKEY_LENGTH 2048
 ENV NAME_REAL     Duply Backup
 ENV NAME_EMAIL    duply@localhost
-ENV PASSPHRASE    random
+ENV PASS_FILE     invalid
 
 VOLUME ["/root"]
 

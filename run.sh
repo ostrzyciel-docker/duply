@@ -1,13 +1,12 @@
 #!/bin/bash
 
+PASSPHRASE=`cat $PASS_FILE | tr -d '\n'`
+
 case "$1" in
     'bash')
         exec bash
         ;;
     'gen-key')
-        if [ "random" = "$PASSPHRASE" ]; then
-            PASSPHRASE=$(pwgen 16 1)
-        fi
         cat << EOF | gpg --batch --gen-key
         %echo Generating a key
         Key-Type: $KEY_TYPE

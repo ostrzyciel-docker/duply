@@ -7,9 +7,11 @@ This docker image needs a persistent storage to store its configuration, keys an
 The corresponding docker command would be
 
     docker run \
-      -itd \
-      -v /path_to_directory/duply:/root \
-      ostrzyciel/duply:latest
+        -itd \
+        -v /path_to_directory/duply:/root \
+        -v /path_to_secret/secret:/passphrase
+        --env PASS_FILE=/passphrase
+        ostrzyciel/duply:latest
 
 Environment variables
 =====================
