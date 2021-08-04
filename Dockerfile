@@ -1,11 +1,9 @@
-FROM debian:buster
+FROM debian:bullseye
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     duply \
     haveged \
     ncftp \
-    python-boto \
-    python-paramiko \
     pwgen \
     rsync \
     openssh-client \
