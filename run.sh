@@ -22,15 +22,17 @@ case "$1" in
 EOF
         exit
         ;;
-    '/bin/bash')
+    'help')
         exec cat << EOF
 This is the duply docker container.
 Please specify a command:
+  help
+    Display this help message.
   bash
-     Open a command line prompt in the container.
+    Open a command line prompt in the container.
   gen-key
-     Create a GPG key to be used with duply.
-All other commands will be interpreted as commands to be executed in bash.
+    Create a GPG key to be used with duply.
+All other commands will be interpreted as commands to be executed.
 EOF
         ;;
     *)

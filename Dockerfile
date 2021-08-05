@@ -26,4 +26,4 @@ COPY run.sh /run.sh
 
 ENTRYPOINT ["/run.sh"]
 
-CMD ["/bin/bash"]
+CMD ["help"]
