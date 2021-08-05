@@ -30,8 +30,6 @@ Please specify a command:
      Open a command line prompt in the container.
   gen-key
      Create a GPG key to be used with duply.
-  usage
-     Show duply's usage help.
 All other commands will be interpreted as commands to duply.
 EOF
         ;;
